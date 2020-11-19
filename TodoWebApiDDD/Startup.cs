@@ -58,11 +58,9 @@ namespace TodoWebApiDDD
 
 
             services.AddDbContext<ApplicationContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("Default"), b => b.MigrationsAssembly("TodoWebApiDDD.API")));
+                options.UseSqlServer(Configuration.GetConnectionString("Default"), op => op.MigrationsAssembly("TodoWebApiDDD.API")));
 
             services.AddTransient<IDataService, DataService>();
-
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
