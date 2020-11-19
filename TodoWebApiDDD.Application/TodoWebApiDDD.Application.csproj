@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TodoWebApiDDD.Application.DTO\TodoWebApiDDD.Application.DTO.csproj" />
+    <ProjectReference Include="..\TodoWebApiDDD.Domain.Core\TodoWebApiDDD.Domain.Core.csproj" />
+    <ProjectReference Include="..\TodoWebApiDDD.Domain\TodoWebApiDDD.Domain.csproj" />
+    <ProjectReference Include="..\TodoWebApiDDD.Infrastructure.CrossCutting.Adapter\TodoWebApiDDD.Infrastructure.CrossCutting.Adapter.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TodoWebApiDDD.Application\TodoWebApiDDD.Application.csproj" />
+    <ProjectReference Include="..\TodoWebApiDDD.Domain.Service\TodoWebApiDDD.Domain.Service.csproj" />
+    <ProjectReference Include="..\TodoWebApiDDD.Infrastructure.Data\TodoWebApiDDD.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\TodoWebApiDDD.Infrastructure.Repository\TodoWebApiDDD.Infrastructure.Repository.csproj" />
+    <ProjectReference Include="..\TodoWebApiDDD.Util\TodoWebApiDDD.Util.csproj" />
+  </ItemGroup>
+
+
+</Project>
